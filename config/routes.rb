@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   
+  #get 'sessions/new'
+  #get 'sessions/create'
+  #get 'sessions/destroy'
  # pages controller
   root 'pages#home'
   get 'about', to: 'pages#about'
@@ -9,6 +12,11 @@ Rails.application.routes.draw do
 
  #sessions 
  get 'signup', to: 'users#new'
+
+ get 'login', to: 'sessions#new'
+ post'login', to: 'sessions#create'
+ delete 'logout', to: 'sessions#destroy'
+
  #post 'users', to: 'users#create'
 
  #users controller
