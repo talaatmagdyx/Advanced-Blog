@@ -30,6 +30,9 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
  gem 'bcrypt', '~> 3.1.7'
 
+# add assert_template
+gem 'rails-controller-testing', '~> 1.0', '>= 1.0.2'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 

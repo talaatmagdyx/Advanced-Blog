@@ -17,6 +17,9 @@ Rails.application.routes.draw do
  post'login', to: 'sessions#create'
  delete 'logout', to: 'sessions#destroy'
 
+
+ resources :categories, except: [:destroy]
+
  #post 'users', to: 'users#create'
 
  #users controller

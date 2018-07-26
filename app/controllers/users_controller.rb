@@ -52,7 +52,6 @@ class UsersController < ApplicationController
 		@user.destroy
 		flash[:success] = "User and all articles created by user have been deleted"
 		redirect_to articles_path
-
 		
 	end
 
